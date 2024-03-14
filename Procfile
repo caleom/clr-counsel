@@ -1,0 +1,1 @@
+web: gunicorn CLR_COUNSEL.wsgi
