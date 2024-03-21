@@ -24,8 +24,29 @@
 <body>
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-tabs-container p-0">
-                
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'images/clr-logo.png' %}" alt="Clr Counsel logo" width="30" height="30">
+                    Clr Counsel
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        You are logged in as {{user}}
+                    </span>
+                </div>
+            </div>
         </nav>
     </header>
         
@@ -38,8 +59,17 @@
     </main>
 
         <!-- Footer -->
-        <footer>
-            
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mx-2">
+                <img src="{% static 'images/clr-logo.png' %}" alt="Clr Counsel logo" width="30" height="30">
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Clr Counsel</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            </ul>
         </footer>
 
         <!-- Bootstrap JS -->
