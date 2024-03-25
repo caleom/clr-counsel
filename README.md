@@ -1,11 +1,5 @@
 # Clr Counsel
 
-![Clr Counsel]()
-
-___
-
-Site description
-
 It is a fullstack diary site that allows users to make diary entries, create an account and see them later.
 
 Link to live site - [https://clr-counsel-eeabdf94020e.herokuapp.com/](https://clr-counsel-eeabdf94020e.herokuapp.com/)
@@ -35,7 +29,6 @@ Link to live site - [https://clr-counsel-eeabdf94020e.herokuapp.com/](https://cl
   - [Manual Testing](#manual-testing)
   - [User](#user)
   - [Bugs](#bugs)
-  - [Lighthouse](#lighthouse)
   - [Validation Testing](#validation-testing)
     - [HTML \& CSS](#html--css)
   - [Python Testing](#python-testing)
@@ -46,8 +39,6 @@ Link to live site - [https://clr-counsel-eeabdf94020e.herokuapp.com/](https://cl
     - [Repository deployment via Heroku](#repository-deployment-via-heroku)
     - [Deployment of the app](#deployment-of-the-app)
   - [Credits](#credits)
-  - [Media](#media)
-  - [Acknowledgments and Thanks](#acknowledgments-and-thanks)
 
 ___
 
@@ -83,9 +74,13 @@ ___
 
 - I want patients to be able browse available counsellors to select one they may wish to use for treatment
 
+- I want patients to be able to create an account for the site quickly and easily.
+
 ### Existing Visitor Goals
 
 - have a quick log in process to create and update their diary entries to later show to their counsellors
+
+- have a navbar that changes based on log in status to avoid unnecessary visual clutter
 ___
 
 # Design Choices
@@ -112,38 +107,21 @@ The logo was created using chatGPT and Bing. I initially used chatGPT to generat
 
 ## Wireframes
 
-- Mobile Homepage Wireframe
-
-![Mobile Homepage Wireframe]()
-
-- Mobile Post Detail Wireframe
-
-![Mobile Post Detail Wireframe]()
-
-- Desktop Homepage Wireframe
-
-![Desktop Homepage Wireframe]()
-
-- Desktop Post Detail Wireframe
-
-![Desktop Post Detail Wireframe]()
-
+You can find the wireframe designs [here](./Readme/Wireframes/ClrCounsel.pdf)
 
 ## Database Plan
 
 The database plan is fairly simple, but it shows the information that is stored within the database, the type of data and if it is logged as a Primary or Foreign key where applicable.
 
-![Database plan](documentation/diagrams/database_plan.png)
+![Database plan](./Readme/Images/clr%20counsel%20erd.png)
 
 # Features
 
 ## Future Features
 
-- 
-
-## Features Not Included
-
-- 
+- Counsellor view and browse options
+- Counsellor follow options
+- Counsellor account options
 
 ___
 
@@ -182,46 +160,18 @@ As each section or Function/Model was built during this project, I was testing f
 ADMIN
 | TEST | OUTCOME | PASS/FAIL|
 |:---:|:---:|:---:|
-| Create Blog Post | Post successfully created and displayed | Pass |
-| Edit Blog Post | Error thrown when editing post title & slug (*) | FAIL |
-| Edit Blog Post (after fix) | Post content and category updated successfully | Pass |
-| Delete User Comments | Comment deleted successfully | Pass |
-| Delete Blog Post | Post deleted successfully | Pass |
-| Create 7 Test Posts to check Pagination | Next/Previous Page Appears at bottom of screen | Pass |
+| Delete user | User deleted successfully | Pass |
 
-(*) - While testing the ability to edit posts (Limited to Admin only), I had a problem when editing the title and slug of the post. This was due to the URL not being able to find the original slug of the post (because it had been changed during the edit) to route it after the editing was complete. At this stage, I felt the easiest fix was to remove the ability to edit the post title and slug in the browser, but this functionality is still available via the django admin panel.
 
 ## User
 
 | TEST | OUTCOME | PASS/FAIL|
 |:---:|:---:|:---:|
 | Create Account | Created successfully | Pass |
-| Error Check - Error page when signing up with email address | Unable to replicate(*) | Closed |
-| Login | Login Successful | Pass |
-| Logout | Logout Successful | Pass |
-| Read Full Blog Post | PostDetail page loaded successfully | Pass |
-| Add Comment under Blogpost | Comment Added Successfully | Pass |
-| Delete Comment | Comment Deleted | Pass |
-| Filter Posts by category | Posts marked as selected category displayed successfully | Pass |
-| Create User Account to check access to restricted pages (add_post, add_category)| Page displayed correct error message, with no access to restricted content | Pass |
-
-(*) See Bugs below
 
 ## Bugs
 
-
-
-## Lighthouse
-
-The performance scores appear to be low, and I believe this is due to the images uploaded for each blog post being hosted on a third-party cloud-based platform.
-
-Mobile
-
-![Lighthouse Mobile Score](documentation/images/lighthouse_mobile.png)
-
-Desktop
-
-![Lighthouse Desktop Score](documentation/images/lighthouse_desktop.png)
+The form for adding a diary entry isn't automatically populating the logged in user, this will have to be fixed in a future release
 
 ## Validation Testing
 
@@ -229,17 +179,10 @@ Desktop
 
 HTML & CSS testing was completed using [W3 Validator](https://validator.w3.org/)
 
-![HTML Validation - Descendant Error]()
-
-Fixed:
-
-![HTML Validation Complete- base.html]()
 
 ## Python Testing
 
 Python pep8 validation was done via [Code Institute's Python Linter](https://pep8ci.herokuapp.com/)
-
-The only errors recieved here were where some lines of text exceeded the limit of 79 characters, but these have now been rectified.
 
 Python Files Tested:
 
@@ -303,14 +246,5 @@ ___
 
 ## Credits
 
-
+[Css for button](https://getcssscan.com/css-buttons-examples)
 ___
-
-## Media
-
-
-
-___
-
-## Acknowledgments and Thanks
-
