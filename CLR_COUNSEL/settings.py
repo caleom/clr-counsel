@@ -39,6 +39,8 @@ CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io/', "https://*.herokuapp.com/"]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'allauth',
+    'allauth.account',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -58,6 +60,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    "allauth.account.middleware.AccountMiddleware",
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
