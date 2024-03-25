@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class DiaryEntry(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     entry_date = models.DateField(auto_now_add=True)
     content = models.TextField()
 

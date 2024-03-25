@@ -20,9 +20,7 @@
             {% endif %}
         {% endslot %}
         {% slot actions %}
-            {% element button type="submit" %}
-                {% trans 'Sign Out' %}
-            {% endelement %}
+            <button type="submit" class="button">Sign Out</button>
         {% endslot %}
     {% endelement %}
 {% endblock content %}

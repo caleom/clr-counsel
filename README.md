@@ -1,22 +1,18 @@
 # Clr Counsel
 
-### My Adventures in Northern Sweden
-
-![My Fishing Adventures](documentation/images/responsive.png)
+![Clr Counsel]()
 
 ___
 
 Site description
 
-It is a fullstack blog site that allows users to read blog posts, create an account and comment on the posts.
+It is a fullstack diary site that allows users to make diary entries, create an account and see them later.
 
-Link to live site - [https://md82p4blog.herokuapp.com/](https://md82p4blog.herokuapp.com/)
+Link to live site - [https://clr-counsel-eeabdf94020e.herokuapp.com/](https://clr-counsel-eeabdf94020e.herokuapp.com/)
 
 ## CONTENTS
 
-- [My Fishing Adventures](#my-fishing-adventures)
-    - [My Adventures in Northern Sweden](#my-adventures-in-northern-sweden)
-  - [CONTENTS](#contents)
+- [CONTENTS](#contents)
   - [Site Objectives](#site-objectives)
 - [User Experience/UX](#user-experienceux)
   - [Target Audience](#target-audience)
@@ -28,10 +24,8 @@ Link to live site - [https://md82p4blog.herokuapp.com/](https://md82p4blog.herok
   - [Typography](#typography)
   - [Logo and Favicon](#logo-and-favicon)
   - [Wireframes](#wireframes)
-  - [Flow Diagram](#flow-diagram)
   - [Database Plan](#database-plan)
 - [Features](#features)
-  - [Registration](#registration)
   - [Future Features](#future-features)
   - [Features Not Included](#features-not-included)
 - [Technologies Used](#technologies-used)
@@ -59,7 +53,7 @@ ___
 
 ## Site Objectives
 
-Design and create a blog site to demonstrate an increasing understanding of the libraries and frameworks available to developers.
+Design and create a patient diary that keeps a single point of record while someone is getting 1-2-1 help from a counselor.
 
 My three main objectives were:
 
@@ -69,7 +63,7 @@ My three main objectives were:
 
 - ### Make use of available backend functionality
 
-  The use of the backend framework allows users to create a profile, comment on any of the blog posts on the site, as well as deleting their own comments should they wish to.
+  The use of the backend framework allows users to create a profile, creating diary entries and going back to read them later 
 
 - ### Store data on an external cloud database
 
@@ -81,50 +75,58 @@ ___
 
 ## Target Audience
 
-- 
+- Patients going through counselling sessions
 
 ## User Stories
 
 ### New Visitor Goals
 
-- 
+- I want patients to be able browse available counsellors to select one they may wish to use for treatment
 
 ### Existing Visitor Goals
 
-- 
+- have a quick log in process to create and update their diary entries to later show to their counsellors
 ___
 
 # Design Choices
 
 ## Colour Scheme
 
-The colour scheme used for this project was based on the colors from Code Institute's 'I think therefore I blog' walkthrough module. I have added and modified many aspects of the styling and colours to suit my intentions. It is a fairly neutral scheme, with only the actionable aspects (buttons/links etc) displayed in brighter colours for ease of navigation or site use.
+I used coolors.co to generate the colour scheme, I drew inspiration from other clinical sites such as local dentists and GP's. This I felt would look clean and professional to any site visitors.
+
+<div align="center">
+  <img src="./Readme/Images/Clr-Counsel pallette.png">
+</div>
 
 ## Typography
 
-The main font used is Verdana, but Tangerine was used for the main logo text on the navbar
+Work Sans was selected for a clear and no frills look. This is hosted by Google Fonts.
 
 ## Logo and Favicon
 
-The logo was created using an online logo creator - [Brandcrowd](https://www.brandcrowd.com/)
+The logo was created using chatGPT and Bing. I initially used chatGPT to generate a list of common counselling imagery and then selected several options to put into Bings image generator, i then selected one and took out the couch element and edited it in paint to put it in front of a circle of my choosing.
+
+<div align="center">
+  <img src="./Readme/Images/clr-logo.png">
+</div>
 
 ## Wireframes
 
 - Mobile Homepage Wireframe
 
-![Mobile Homepage Wireframe](documentation/wireframes/mobile_homepage_wireframe.png)
+![Mobile Homepage Wireframe]()
 
 - Mobile Post Detail Wireframe
 
-![Mobile Post Detail Wireframe](documentation/wireframes/mobile_post_detail_wireframe.png)
+![Mobile Post Detail Wireframe]()
 
 - Desktop Homepage Wireframe
 
-![Desktop Homepage Wireframe](documentation/wireframes/desktop_homepage_wireframe.png)
+![Desktop Homepage Wireframe]()
 
 - Desktop Post Detail Wireframe
 
-![Desktop Post Detail Wireframe](documentation/wireframes/desktop_postdetail_wireframe.png)
+![Desktop Post Detail Wireframe]()
 
 
 ## Database Plan
@@ -134,8 +136,6 @@ The database plan is fairly simple, but it shows the information that is stored 
 ![Database plan](documentation/diagrams/database_plan.png)
 
 # Features
-
-
 
 ## Future Features
 
@@ -151,9 +151,7 @@ ___
 
 Here are the technologies used to build this project:
 
-- [CodeAnywhere](https://codeanywhere.com/) To build and create this project
 - [Github](https://github.com) To host and store the data for the site.
-- [CodeAnywhere](https://www.codeanywhere.com) the IDE where the site was built.
 - [PEP8 Validator](https://pep8ci.herokuapp.com/) Used to check python code for errors
 - [ElephandSQL](https://www.elephantsql.com/) Used to store PostgreSQL database.
 - [Cloudinary](https://cloudinary.com/) Used as cloud storage for images uploaded as part of the blog posts
@@ -171,7 +169,7 @@ Here are the technologies used to build this project:
 
 This project was designed using Agile methodology, utilising the Project Board and Issues sections in GitHub
 
-- [Project Board](https://github.com/users/markdaniel1982/projects/4/views/1)
+- [Project Board](https://github.com/users/caleom/projects/6/views/1)
 
 # Testing
 
@@ -231,13 +229,11 @@ Desktop
 
 HTML & CSS testing was completed using [W3 Validator](https://validator.w3.org/)
 
-When validating the code, I had the error shown below. this was fixed by removing the button and using Bootstrap styles to display the link as a button instead
-
-![HTML Validation - Descendant Error](documentation/testing_documentation/validation/base.html_button_descendant.png)
+![HTML Validation - Descendant Error]()
 
 Fixed:
 
-![HTML Validation Complete- base.html](documentation/testing_documentation/validation/index.html_validation_complete.png)
+![HTML Validation Complete- base.html]()
 
 ## Python Testing
 
@@ -260,7 +256,7 @@ ___
 
 The website was stored using GitHub for storage of data and version control. To do this I did the following;
 
-After each addition, change or removal of code, in the terminal within your IDE (I used codeanywhere for this project) type:
+After each addition, change or removal of code, in the terminal within your IDE type:
 
 - git add .
 - git commit -m "meaningful commit message"
